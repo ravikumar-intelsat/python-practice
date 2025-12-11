@@ -15,13 +15,13 @@ def get_weather(city="London"):
 
     # Extract important fields
     current = data["current_condition"][0]
-    temp = current["temp_C"]
+    temp = current["temperature_C"]
     feels = current["FeelsLikeC"]
     humidity = current["humidity"]
     desc = current["weatherDesc"][0]["value"]
 
     print(f"\nWeather in {city}:")
-    print(f"🌡 Temperature : {temp}°C")
+    print(f"🌡 Temperature : {temperature}°C")
     print(f"🥵 Feels Like : {feels}°C")
     print(f"💧 Humidity    : {humidity}%")
     print(f"🌥 Condition   : {desc}")
