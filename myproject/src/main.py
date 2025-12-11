@@ -10,7 +10,6 @@ def get_weather(city="London"):
     except Exception as e:
         print("❌ Error fetching weather:", e)
         return
-
     data = response.json()
 
     # Extract important fields
